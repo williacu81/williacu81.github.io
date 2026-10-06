@@ -16,6 +16,7 @@
     salud:       { es: "Salud",             en: "Healthcare" },
     finanzas:    { es: "Finanzas",          en: "Finance" },
     ecommerce:   { es: "E-commerce",        en: "E-commerce" },
+    apps:        { es: "Apps móviles",      en: "Mobile apps" },
     servicios:   { es: "Servicios B2B",     en: "B2B services" },
     gastronomia: { es: "Gastronomía",       en: "Food & dining" },
     educacion:   { es: "Educación",         en: "Education" },
@@ -23,7 +24,7 @@
   };
 
   const SKILLS = [
-    { es: "Desarrollo", en: "Development", items: ["WordPress", "Elementor Pro", "WooCommerce", "ACF y CPT", "HTML, CSS y JavaScript", "PHP, hooks y plugins a medida", "APIs REST"] },
+    { es: "Desarrollo", en: "Development", items: ["WordPress y Elementor Pro", "PHP", "Drupal", "React", "Expo (React Native) y Supabase", "HTML, CSS y JavaScript", "APIs REST"] },
     { es: "SEO y medición", en: "SEO & analytics", items: ["SEO técnico", "SEO programático", "Schema markup", "Core Web Vitals", "Search Console", "GA4 y Tag Manager"] },
     { es: "Plataformas", en: "Platforms", items: ["WordPress", "Shopify", "Duda", "PrestaShop", "Cloudflare", "WP Rocket"] },
     { es: "IA en el flujo de trabajo", en: "AI in my workflow", items: ["Claude", "ChatGPT", "Gemini", "Copilot"] }
@@ -39,7 +40,7 @@
       "facts.sites": "sitios construidos", "facts.ind": "industrias", "facts.countries": "países", "facts.years": "años de experiencia",
       "work.title": "Proyectos", "work.viewIndex": "Índice", "work.viewGrid": "Galería", "work.all": "Todos",
       "about.title": "Perfil",
-      "about.p1": "Más de 10 años diseñando, desarrollando y optimizando sitios web y tiendas en línea. Trabajo principalmente con WordPress, Elementor y WooCommerce, y construyo a la medida lo que el proyecto necesite: plugins, integraciones con APIs, formularios avanzados y páginas dinámicas.",
+      "about.p1": "Más de 10 años diseñando, desarrollando y optimizando sitios web y tiendas en línea. Trabajo principalmente con WordPress y Elementor, y también desarrollo en PHP, Drupal y React, además de apps móviles nativas con Expo y Supabase. Construyo a la medida lo que el proyecto necesite: integraciones con APIs, formularios avanzados y páginas dinámicas.",
       "about.p2": "Cada sitio sale con SEO técnico desde la base: arquitectura, datos estructurados, rendimiento y medición con Search Console, Analytics y Tag Manager. Uso herramientas de IA en mi flujo diario para prototipar, depurar y documentar más rápido.",
       "contact.title": "¿Tienes un proyecto o una vacante?", "contact.lead": "Respondo en menos de 24 horas.",
       "contact.email": "Escríbeme", "contact.cv": "Descargar CV",
@@ -59,7 +60,7 @@
       "facts.sites": "websites built", "facts.ind": "industries", "facts.countries": "countries", "facts.years": "years of experience",
       "work.title": "Work", "work.viewIndex": "Index", "work.viewGrid": "Gallery", "work.all": "All",
       "about.title": "About",
-      "about.p1": "10+ years designing, developing and optimizing websites and online stores. I work mainly with WordPress, Elementor and WooCommerce, and build whatever custom pieces a project needs: plugins, API integrations, advanced forms and dynamic pages.",
+      "about.p1": "10+ years designing, developing and optimizing websites and online stores. I work mainly with WordPress and Elementor, and also build with PHP, Drupal and React, plus native mobile apps with Expo and Supabase. I build whatever custom pieces a project needs: API integrations, advanced forms and dynamic pages.",
       "about.p2": "Every site ships with technical SEO built in: architecture, structured data, performance, and tracking with Search Console, Analytics and Tag Manager. AI tools are part of my daily workflow for faster prototyping, debugging and documentation.",
       "contact.title": "Have a project or an opening?", "contact.lead": "I reply within 24 hours.",
       "contact.email": "Email me", "contact.cv": "Download résumé",

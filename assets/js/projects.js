@@ -5,7 +5,7 @@
   - "slug" debe coincidir con el nombre de la carpeta en Drive convertido por scripts/prepare_images.py
     (minúsculas, sin tildes, espacios -> guiones). Ej: "Volé Candles" -> "vole-candles".
   - "url": vacío ("") si el sitio no tiene dominio público todavía.
-  - "stack": REVISAR proyecto por proyecto. Viene prellenado con WordPress + Elementor como base.
+  - "stack": tecnología con la que se construyó el sitio.
   - "industry": una de las claves definidas en INDUSTRIES (main.js).
 */
 window.PROJECTS = [
@@ -14,7 +14,7 @@ window.PROJECTS = [
     name: "Festival Internacional de Cine de Cartagena (FICCI)",
     url: "https://ficcifestival.com",
     industry: "cultura",
-    stack: ["WordPress", "Elementor"],
+    stack: ["Drupal"],
     desc: {
       es: "Sitio oficial del festival de cine más antiguo de América Latina: programación, convocatorias, invitados y noticias.",
       en: "Official site of Latin America's oldest film festival: lineup, open calls, guests and news."
@@ -36,7 +36,7 @@ window.PROJECTS = [
     name: "Volé Candles",
     url: "https://volecandles.com",
     industry: "ecommerce",
-    stack: ["WordPress", "WooCommerce", "Elementor"],
+    stack: ["WordPress", "Elementor"],
     desc: {
       es: "Tienda en línea de velas artesanales de lujo hechas en vidrio reciclado.",
       en: "Online store for handcrafted luxury candles made in recycled glass."
@@ -58,7 +58,7 @@ window.PROJECTS = [
     name: "Festival Voces del Jazz y del Caribe",
     url: "https://vocesdeljazz.com",
     industry: "cultura",
-    stack: ["WordPress", "Elementor"],
+    stack: ["PHP"],
     desc: {
       es: "Sitio del festival de jazz y música del Caribe: artistas, agenda y ediciones anteriores.",
       en: "Site for the Jazz and Caribbean music festival: artists, schedule and past editions."
@@ -80,7 +80,7 @@ window.PROJECTS = [
     name: "Jairo Varela Legacy",
     url: "https://jairovarelalegacy.com",
     industry: "cultura",
-    stack: ["WordPress", "Elementor"],
+    stack: ["React"],
     desc: {
       es: "Homenaje digital a Jairo Varela, fundador del Grupo Niche: su historia, su música y su legado.",
       en: "Digital tribute to Jairo Varela, founder of Grupo Niche: his story, music and legacy."
@@ -91,7 +91,7 @@ window.PROJECTS = [
     name: "Comisión Fílmica de Cartagena",
     url: "https://cartagenacomisionfilmica.com",
     industry: "cultura",
-    stack: ["WordPress", "Elementor"],
+    stack: ["Drupal"],
     desc: {
       es: "Portal para atraer producciones audiovisuales a Cartagena: locaciones, permisos y servicios.",
       en: "Portal attracting film and TV productions to Cartagena: locations, permits and services."
@@ -134,11 +134,11 @@ window.PROJECTS = [
     slug: "brunch-after",
     name: "Brunch After",
     url: "https://brunchafter.com",
-    industry: "gastronomia",
-    stack: ["WordPress", "Elementor"],
+    industry: "apps",
+    stack: ["PHP", "Expo (React Native)", "Supabase"],
     desc: {
-      es: "Sitio de restaurante: menú, ambiente y reservas.",
-      en: "Restaurant website: menu, atmosphere and reservations."
+      es: "Sitio web de una aplicación móvil de citas. Además del sitio, desarrollé la app nativa para Android y iPhone con Expo y Supabase.",
+      en: "Website for a mobile dating app. Beyond the site, I built the native Android and iPhone app with Expo and Supabase."
     }
   },
   {
@@ -168,7 +168,7 @@ window.PROJECTS = [
     name: "US Agroparts",
     url: "https://usagroparts.com",
     industry: "ecommerce",
-    stack: ["WordPress", "WooCommerce", "Elementor"],
+    stack: ["WordPress", "Elementor"],
     desc: {
       es: "Catálogo y tienda de repuestos para maquinaria agrícola.",
       en: "Catalog and store for agricultural machinery parts."
@@ -179,7 +179,7 @@ window.PROJECTS = [
     name: "Sumercé Store",
     url: "https://sumerced.kickoffadvertising.com",
     industry: "ecommerce",
-    stack: ["WordPress", "WooCommerce", "Elementor"],
+    stack: ["WordPress", "Elementor"],
     desc: {
       es: "Tienda en línea de productos colombianos.",
       en: "Online store for Colombian products."
@@ -300,7 +300,7 @@ window.PROJECTS = [
     name: "Personal Loans Choice",
     url: "https://personalloanschoice.com",
     industry: "finanzas",
-    stack: ["WordPress", "Elementor"],
+    stack: ["PHP"],
     desc: {
       es: "Sitio de generación de leads para préstamos personales.",
       en: "Lead generation site for personal loans."
@@ -322,7 +322,7 @@ window.PROJECTS = [
     name: "Debt Relief Rescue",
     url: "https://www.debtreliefrescue.com",
     industry: "finanzas",
-    stack: ["WordPress", "Elementor"],
+    stack: ["PHP"],
     desc: {
       es: "Sitio de servicios de alivio y consolidación de deudas.",
       en: "Debt relief and consolidation services website."
@@ -333,7 +333,7 @@ window.PROJECTS = [
     name: "Business Loans",
     url: "",
     industry: "finanzas",
-    stack: ["WordPress", "Elementor"],
+    stack: ["PHP"],
     desc: {
       es: "Sitio de financiación para pequeñas y medianas empresas.",
       en: "Small and mid-size business financing website."
@@ -344,7 +344,7 @@ window.PROJECTS = [
     name: "Auto Insurance Picker",
     url: "https://autoinsurancepicker.com",
     industry: "finanzas",
-    stack: ["WordPress", "Elementor"],
+    stack: ["PHP"],
     desc: {
       es: "Comparador y generador de leads para seguros de auto.",
       en: "Auto insurance comparison and lead generation site."

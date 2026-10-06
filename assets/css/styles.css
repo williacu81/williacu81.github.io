@@ -8,8 +8,8 @@
   --accent-ink: #FFFFFF;
   --mark: #FFD84D;
   --mark-ink: #142033;
-  --display: "Bricolage Grotesque", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
-  --body: "Instrument Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --display: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --body: "Manrope", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --wrap: 1180px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
   color-scheme: light;
