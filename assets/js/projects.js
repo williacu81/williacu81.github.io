@@ -298,6 +298,17 @@ window.PROJECTS = [
     }
   },
   {
+    slug: "angelica-bortfeldt",
+    name: "Angélica Bortfeldt",
+    url: "https://angelicabortfeldt.com",
+    industry: "marca",
+    stack: ["WordPress", "Elementor"],
+    desc: {
+      es: "Sitio de marca personal de una especialista en contenido SEO: servicios, enfoque de trabajo y contacto.",
+      en: "Personal brand site for an SEO content specialist: services, approach and contact."
+    }
+  },
+  {
     slug: "ibrahim-salem",
     name: "Ibrahim Salem",
     url: "https://ibrahimsalemcomedia.com",
