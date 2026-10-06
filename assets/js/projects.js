@@ -33,6 +33,17 @@ window.PROJECTS = [
     }
   },
   {
+    slug: "volkswagen",
+    name: "Volkswagen Puerto Rico",
+    url: "https://volkswagenpuertorico.online",
+    industry: "automotriz",
+    stack: ["HTML"],
+    desc: {
+      es: "Landing page de una campaña conjunta de los tres concesionarios Volkswagen de Puerto Rico para captar clientes del Atlas 2026 con 0% de APR.",
+      en: "Landing page for a joint campaign by Volkswagen's three dealerships in Puerto Rico, capturing leads for the 2026 Atlas at 0% APR."
+    }
+  },
+  {
     slug: "vole-candles",
     name: "Volé Candles",
     url: "https://volecandles.com",
@@ -400,7 +411,7 @@ window.PROJECTS = [
     slug: "8-min-auto",
     name: "8 Min Auto",
     url: "https://8minauto.com",
-    industry: "servicios",
+    industry: "automotriz",
     stack: ["WordPress", "Elementor"],
     desc: {
       es: "Sitio de un taller de reparación y mantenimiento de vehículos en Estados Unidos.",

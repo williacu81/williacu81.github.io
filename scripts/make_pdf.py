@@ -57,6 +57,7 @@ INDUSTRIES = {
     "finanzas":    {"es": "Finanzas",          "en": "Finance"},
     "ecommerce":   {"es": "E-commerce",        "en": "E-commerce"},
     "apps":        {"es": "Apps móviles",      "en": "Mobile apps"},
+    "automotriz":  {"es": "Automotriz",        "en": "Automotive"},
     "servicios":   {"es": "Servicios",         "en": "Services"},
     "gastronomia": {"es": "Gastronomía",       "en": "Food & dining"},
     "educacion":   {"es": "Educación",         "en": "Education"},
