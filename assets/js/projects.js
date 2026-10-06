@@ -154,8 +154,8 @@ window.PROJECTS = [
   },
   {
     slug: "cheff-cob",
-    name: "Cheff Cob",
-    url: "",
+    name: "The Chef Cobb",
+    url: "https://thechefcobb.com",
     industry: "gastronomia",
     stack: ["WordPress", "Elementor"],
     desc: {
@@ -282,6 +282,17 @@ window.PROJECTS = [
     desc: {
       es: "Sitio de marca personal.",
       en: "Personal brand website."
+    }
+  },
+  {
+    slug: "possible-finance",
+    name: "Possible Finance",
+    url: "",
+    industry: "finanzas",
+    stack: ["WordPress", "Elementor"],
+    desc: {
+      es: "Flujo de redirección y captación de clientes para Possible Finance, empresa fintech de préstamos en Estados Unidos.",
+      en: "Redirect and customer acquisition flow for Possible Finance, a US lending fintech."
     }
   },
   {

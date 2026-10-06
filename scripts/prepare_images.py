@@ -8,8 +8,8 @@ Uso:
     python scripts/prepare_images.py "/ruta/a/Portafolio"
 
 Por cada subcarpeta genera assets/img/projects/<slug>/:
-    desktop.webp  <- archivo que contenga "macbook" en el nombre (mockup de escritorio)
-    mobile.webp   <- archivo que contenga "iphone" en el nombre (mockup móvil)
+    desktop.webp  <- imagen con "macbook", "desktop" o "laptop" en el nombre (mockup de escritorio)
+    mobile.webp   <- imagen con "iphone", "mobile" o "movil" en el nombre (mockup móvil)
     full.webp     <- primer PDF de la carpeta (captura de página completa, p. ej. FireShot)
 """
 import re
@@ -26,6 +26,8 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "img" / "projects"
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".webp"}
+DESKTOP_KEYS = ("macbook", "desktop", "laptop")
+MOBILE_KEYS = ("iphone", "mobile", "movil")
 
 DESKTOP_MAX_W = 1400   # ancho máximo del mockup de escritorio
 MOBILE_MAX_H = 1100    # alto máximo del mockup móvil
@@ -93,12 +95,12 @@ def main():
 
     slugs = known_slugs()
     seen = set()
-    for folder in sorted(p for p in src_root.iterdir() if p.is_dir()):
+    for folder in sorted(p for p in src_root.iterdir() if p.is_dir() and not p.name.startswith(".")):
         slug = slugify(folder.name)
         seen.add(slug)
         files = [f for f in folder.iterdir() if f.is_file()]
-        mac = [f for f in files if f.suffix.lower() in IMAGE_EXT and "macbook" in f.name.lower()]
-        phone = [f for f in files if f.suffix.lower() in IMAGE_EXT and "iphone" in f.name.lower()]
+        mac = [f for f in files if f.suffix.lower() in IMAGE_EXT and any(k in f.name.lower() for k in DESKTOP_KEYS)]
+        phone = [f for f in files if f.suffix.lower() in IMAGE_EXT and any(k in f.name.lower() for k in MOBILE_KEYS)]
         pdfs = [f for f in files if f.suffix.lower() == ".pdf"]
 
         dest = OUT / slug
@@ -119,8 +121,9 @@ def main():
         miss = f"   (falta: {', '.join(missing)})" if missing else ""
         print(f"[{slug}] {', '.join(done) or 'sin archivos'}{miss}{flag}")
 
-    for s in sorted(slugs - seen):
-        print(f"[{s}] está en projects.js pero no hay carpeta con ese nombre")
+    if len(seen) >= len(slugs) / 2:  # solo si se procesó la carpeta completa
+        for s in sorted(slugs - seen):
+            print(f"[{s}] está en projects.js pero no hay carpeta con ese nombre")
 
 
 if __name__ == "__main__":
