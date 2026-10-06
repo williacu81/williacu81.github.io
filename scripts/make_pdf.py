@@ -57,7 +57,7 @@ INDUSTRIES = {
     "finanzas":    {"es": "Finanzas",          "en": "Finance"},
     "ecommerce":   {"es": "E-commerce",        "en": "E-commerce"},
     "apps":        {"es": "Apps móviles",      "en": "Mobile apps"},
-    "servicios":   {"es": "Servicios B2B",     "en": "B2B services"},
+    "servicios":   {"es": "Servicios",         "en": "Services"},
     "gastronomia": {"es": "Gastronomía",       "en": "Food & dining"},
     "educacion":   {"es": "Educación",         "en": "Education"},
     "marca":       {"es": "Marca personal",    "en": "Personal brand"},
@@ -208,7 +208,8 @@ def cover(c, lang, projects, featured):
 
     # Cifras
     inds = len({p["industry"] for p in projects})
-    facts = [(str(len(projects)), t["sites"]), (str(inds), t["ind"]),
+    total_sites = sum(p.get("sites", 1) for p in projects)
+    facts = [(str(total_sites), t["sites"]), (str(inds), t["ind"]),
              (str(COUNTRIES), t["countries"]), (YEARS, t["years"])]
     fy = 150
     fx = M

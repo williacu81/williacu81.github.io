@@ -17,7 +17,7 @@
     finanzas:    { es: "Finanzas",          en: "Finance" },
     ecommerce:   { es: "E-commerce",        en: "E-commerce" },
     apps:        { es: "Apps móviles",      en: "Mobile apps" },
-    servicios:   { es: "Servicios B2B",     en: "B2B services" },
+    servicios:   { es: "Servicios",         en: "Services" },
     gastronomia: { es: "Gastronomía",       en: "Food & dining" },
     educacion:   { es: "Educación",         en: "Education" },
     marca:       { es: "Marca personal",    en: "Personal brand" }
@@ -126,7 +126,8 @@
 
   function renderFacts() {
     const industries = new Set(P.map(p => p.industry)).size;
-    const facts = [[P.length, "facts.sites"], [industries, "facts.ind"], [CONFIG.countries, "facts.countries"], [CONFIG.years, "facts.years"]];
+    const totalSites = P.reduce((n, p) => n + (p.sites || 1), 0);
+    const facts = [[totalSites, "facts.sites"], [industries, "facts.ind"], [CONFIG.countries, "facts.countries"], [CONFIG.years, "facts.years"]];
     $("#facts").replaceChildren(...facts.map(([v, k]) => el("div", {}, [el("dt", { text: t(k) }), el("dd", { text: String(v) })])));
   }
 

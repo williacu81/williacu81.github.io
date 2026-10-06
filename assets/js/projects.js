@@ -7,6 +7,7 @@
   - "url": vacío ("") si el sitio no tiene dominio público todavía.
   - "stack": tecnología con la que se construyó el sitio.
   - "industry": una de las claves definidas en INDUSTRIES (main.js).
+  - "sites" (opcional): número de sitios si el proyecto incluye más de uno. Se suma en el contador.
 */
 window.PROJECTS = [
   {
@@ -124,10 +125,11 @@ window.PROJECTS = [
     name: "Gold Education",
     url: "https://goldeducation.com.mx",
     industry: "educacion",
+    sites: 2,
     stack: ["WordPress", "Elementor"],
     desc: {
-      es: "Sitio de una institución educativa en México: programas, admisiones y contacto.",
-      en: "Website for an education provider in Mexico: programs, admissions and contact."
+      es: "Sitios web para las oficinas en México y Colombia de una empresa que gestiona intercambios educativos en el exterior: programas, destinos y asesoría.",
+      en: "Websites for the Mexico and Colombia offices of a company that manages study-abroad exchanges: programs, destinations and advising."
     }
   },
   {
@@ -186,6 +188,39 @@ window.PROJECTS = [
     }
   },
   {
+    slug: "magica-figura",
+    name: "Mágica Figura",
+    url: "https://magicafigura.com",
+    industry: "ecommerce",
+    stack: ["Shopify"],
+    desc: {
+      es: "Tienda en línea de productos para la salud.",
+      en: "Online store for health products."
+    }
+  },
+  {
+    slug: "viuda-negra-tattoo",
+    name: "Viuda Negra Tattoo Supply",
+    url: "https://www.viudanegra.co",
+    industry: "ecommerce",
+    stack: ["Shopify"],
+    desc: {
+      es: "Tienda en línea de una distribuidora de insumos para tatuaje con envíos a toda Colombia.",
+      en: "Online store for a tattoo supply distributor shipping across Colombia."
+    }
+  },
+  {
+    slug: "truelove-supply",
+    name: "Truelove Supply",
+    url: "https://www.truelovesupply.com",
+    industry: "ecommerce",
+    stack: ["WordPress", "Elementor"],
+    desc: {
+      es: "Sitio de una marca colombiana de productos para el cuidado y la elaboración de tatuajes.",
+      en: "Website for a Colombian brand of tattoo-making and aftercare products."
+    }
+  },
+  {
     slug: "steel-glass-designs",
     name: "Steel Glass Designs",
     url: "https://steelglassdesigns.com",
@@ -222,22 +257,22 @@ window.PROJECTS = [
     slug: "outsource-worx",
     name: "OutSource Worx",
     url: "https://outsourceworx.com",
-    industry: "servicios",
+    industry: "salud",
     stack: ["WordPress", "Elementor"],
     desc: {
-      es: "Sitio de servicios de outsourcing para empresas.",
-      en: "Business outsourcing services website."
+      es: "Sitio de una compañía farmacéutica en Estados Unidos que fabrica medicamentos a medida.",
+      en: "Website for a US pharmaceutical company that manufactures custom medications."
     }
   },
   {
     slug: "home-services-improvements",
     name: "Home Services Improvement",
     url: "https://homeservicesimprovement.com",
-    industry: "servicios",
+    industry: "finanzas",
     stack: ["WordPress", "Elementor"],
     desc: {
-      es: "Sitio de servicios de mejoras y remodelación para el hogar.",
-      en: "Home improvement and remodeling services website."
+      es: "Sitio de créditos rápidos para proyectos de mejoras del hogar en Estados Unidos.",
+      en: "Fast financing site for home improvement projects in the US."
     }
   },
   {
@@ -365,11 +400,11 @@ window.PROJECTS = [
     slug: "8-min-auto",
     name: "8 Min Auto",
     url: "https://8minauto.com",
-    industry: "finanzas",
+    industry: "servicios",
     stack: ["WordPress", "Elementor"],
     desc: {
-      es: "Sitio de cotización rápida para servicios financieros de autos.",
-      en: "Fast-quote site for auto financial services."
+      es: "Sitio de un taller de reparación y mantenimiento de vehículos en Estados Unidos.",
+      en: "Website for an auto repair and maintenance shop in the US."
     }
   },
   {
